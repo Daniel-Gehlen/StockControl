@@ -1,0 +1,55 @@
+# 1. Ignorar arquivos temporários e de dependências do Backend (Spring Boot)
+# Ignorar diretórios e arquivos criados por builds do Spring Boot
+/target/
+/*.jar
+/*.war
+/*.ear
+/*.log
+/.idea/
+/.vscode/
+/.DS_Store
+*.iml
+*.class
+*.jar
+*.war
+*.ear
+# Arquivos de logs
+*.log
+
+# 2. Ignorar arquivos específicos do frontend (Vue.js)
+# Ignorar node_modules (dependências do npm)
+node_modules/
+
+# Arquivos de build e distribuição do Vue.js
+/dist/
+/build/
+/*.log
+
+# Arquivos de configuração IDEs
+.idea/
+.vscode/
+
+# Arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# 3. Ignorar arquivos temporários do npm
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+
+# 4. Ignorar arquivos específicos do Docker (caso utilize)
+docker-compose.override.yml
+*.dockerfile
+
+# 5. Ignorar outros arquivos de backup e editor de texto
+*~ 
+*.swp
+*.bak
+*.tmp
+*.swo
+
+# 6. Ignorar arquivos de dependência de desenvolvimento (caso utilize Webpack ou outros bundlers)
+/public/build/
+/public/dist/

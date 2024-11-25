@@ -1,0 +1,36 @@
+erDiagram
+    PRODUTO ||--|| ESTOQUE : tem
+    PRODUTO }|--|| CATEGORIA : pertence
+    PRODUTO ||--o{ MOVIMENTACAO : registra
+    
+    PRODUTO {
+        int Id
+        string Nome
+        string Codigo
+        decimal PrecoCompra
+        decimal PrecoVenda
+        int CategoriaId
+    }
+    
+    CATEGORIA {
+        int Id
+        string Nome
+        string Descricao
+    }
+    
+    ESTOQUE {
+        int Id
+        int ProdutoId
+        int QuantidadeAtual
+        int QuantidadeMinima
+        datetime UltimaAtualizacao
+    }
+    
+    MOVIMENTACAO {
+        int Id
+        int ProdutoId
+        string Tipo
+        int Quantidade
+        datetime Data
+        string Observacao
+    }
